@@ -1,5 +1,5 @@
 /*
-Color Sensor Calibration from DroneBotWorkshop
+Color Sensor Calibration from DroneBotWorkshop (Lines #7 - #122)
 To Calibrate the color sensor, comment out lines #115 - #279 ; Uncomment Lines #7 - #122
 To Get Readings as outputs from the color sensor comment out lines #7 - #122 ; Uncomment Lines #115 - #279
 */

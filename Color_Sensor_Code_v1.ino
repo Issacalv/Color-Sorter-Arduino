@@ -144,7 +144,8 @@ int greenMin = 28; // Green minimum value
 int greenMax = 261; // Green maximum value
 int blueMin = 24; // Blue minimum value
 int blueMax = 181; // Blue maximum value
-int pos = 130; // Variable to store the servo position, the "middle" point for us was an angle of 130, therefore it is set as default
+int pos = 100; // Variable to store the servo position, the "middle" point for us was an angle of 130, therefore it is set as default 
+// (4/16/22) Changes Because of a new positon we moved the servo, the new middle point would be an angle of 100
 
 // Color Pulse Width Measurements
 
@@ -206,6 +207,7 @@ void loop() {
     lcd.setCursor(0,1);
     lcd.print("RED!");
     myservo.write(60); //Ideal position in our case was to change the servo angle from 130 -> 60 to release the red checker
+    // (4/16/22) Changes Because of a new positon we moved the servo, the new angle moves fom 100 -> 60
     delay(100);
     Serial.println(" - The Color is Red! "); 
    }
@@ -215,7 +217,8 @@ void loop() {
     lcd.clear();
     lcd.setCursor(0,1);
     lcd.print("BLACK!");
-    myservo.write(180); //Ideal position in our case was to change the servo angle from 130 -> 180 to release the black checker
+    myservo.write(150); //Ideal position in our case was to change the servo angle from 130 -> 180 to release the black checker
+    // (4/16/22) Changes Because of a new positon we moved the servo, the new servo angle moves from 100 -> 150
     delay(100);
     Serial.println(" - The color is Black! "); 
    }
